@@ -1,0 +1,15 @@
+C的hello world :
+//包含一个叫stdio.h的文件
+//std--标准的意思--standard input output
+#include <stdio.h>
+//int是整型的意思
+//main前面的int表示main函数调用之后返回一个整型值
+//void main这种写法已经过时了
+int main()//主函数--程序的入口-main函数有且仅有一个
+        {//这里是要完成的任务
+        //在屏幕上输出hello-调用函数--print function即printf函数
+        //库函数--是指C语言本身提供给我们使用的函数
+        //相当于在使用别人的东西--需要给别人打个招呼（狗头）即在开头用--#include
+        printf("hello\n");
+        return 0;//return 0的意义是返回0
+}
