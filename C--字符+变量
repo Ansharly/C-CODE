@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+int global = 2019;//全局变量
+
+ int main()
+{ 
+int local = 2018;//局部变量
+				 //下面定义的global会不会有问题？
+int global = 2020;//局部变量
+printf("global=%d\n", global);
+return 0;
+}
+
+
+
+
+
+
+//int num2 = 20;//全局变量--定义在  {}-（代码块）  之外的变量
+//int main()
+//{
+	//int num1 = 10;//局部变量--定义在  {}-（代码块）内部的变量
+	//return 0;
+
+
+//}
