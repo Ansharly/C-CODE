@@ -1,0 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS//忽略安全检测，不然使用scanf会报错
+#include <stdio.h>
+int main()
+{
+	//未声明的标识符
+	//声明    extern--是用来声明外部符号
+	extern int g_val;
+	printf("g-val=%d\n", g_val);
+
+	return 0;
+}
+
+
+
+//int global = 2021;
+//
+//int main()
+//{
+//
+//	printf("%d\n", global);
+//
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//局部变量的作用域
+//	int num = 0;
+//	{ printf("num=%d\n",num);
+//	}
+//    return 0;
+//}
+
+
+
+//int main() 
+//{
+//
+//	//计算两个数的和
+//	int num1 = 0;
+//	int num2 = 0;
+//	int sum = 0;
+//	//输入数据-使用输入函数
+//	scanf("%d%d",&num1,&num2);//&--取地址符号
+//	//C语言语法规定，变量要定义在当前代码块的最前面
+//	sum = num1 + num2;
+//	printf("sum=%d\n", sum);
+//    return 0;
+//
+//
+//
+//}
