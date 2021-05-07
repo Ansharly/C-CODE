@@ -1,0 +1,123 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	printf("%d\n", strlen("c:\test\32\test.c"));
+	printf("%c\n", '\132');//eg:打印出来为大写的Z
+	printf("%c\n", '\x61');//同理，自己转换为16进制对应为a，在这里，x61即为一个字符--转义字符
+
+	return 0;
+}//题目：将上面的字符串计算长度并以整数形式输出
+//\32--32是2个8进制数字
+//32作为8进制代表的那个十进制数字，作为ASCII码值，对应的字符
+//32转换为8进制数字（见印象笔记）为26--作为ASCII码值代表的字符，查ASCII表，可知26对应为一个向右的箭头
+
+
+//{
+//	//printf("c:\\test\\32\\test.c");//  \t  叫水平制表符
+//	//printf("%c\n", '\'');//打印一个单引号
+//	printf("%s\n", "\"");//打印一个双引号
+//	return 0;
+//}
+
+//{
+//	printf("abcn");
+//	printf("abc\n");//-----此时，\n在这里就是一个转义字符，\
+//    return 0;
+//}
+
+
+
+//{
+//	char arr1[] = "abc";
+//	char arr2[] = { 'a','b','c' ,'\0'};
+//	printf("%d\n", strlen(arr1));//strlen-string length--计算字符串长度的
+//	printf("%d\n", strlen(arr2));
+//    return 0;
+//}
+
+
+
+//int main()
+//{
+//	//'a'的值是97  //
+//	// 数据在计算机上存储的时候，存的是二进制
+//	// a--97
+//	// A--65
+//	// .....
+//	// ASCII编码
+//	//上边的数字即ASCII码值
+//	//怎么存放字符串--数组
+//	//"abc"--'a''b''c''\0'
+//	//'a''b''c'--'a''b''c'
+//	//说明‘\0’是字符串结束的标志‘\0'的值是0
+//	char arr2[] = { 'a','b','c','\0'};
+//	char arr1[] = "abc";
+//	printf("%s\n", arr1);
+//	printf("%s\n", arr2);
+//
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//字符串
+//	"abcdef";
+//	"hello world"
+//	"";//空字符串
+//    return 0;
+//}
+
+
+
+//enum Sex
+//{
+//	MALE,
+//	FEMALE,
+//	SECURT
+//};//上边的MALE、FEMALE、SECURT---即为枚举常量
+//
+//int main()
+//{  //枚举常量
+//	//枚举--一一列举
+//	//生活中有一些是可以一一列举出来的，比如说性别，男、女、其它。
+//	//再例如：三原色：红、黄、蓝。星期：1、2、3、4、5、6、7。....
+//
+//	//枚举关键字--enum
+//	/*enum Sex s = MALE;*///给s赋值性别
+//	printf("%d\n", MALE);//0
+//	printf("%d\n", FEMALE);//1
+//	printf("%d\n", SECURT);//2--这三个值是这几个符号默认所属的值，是不可被改变的，这就是枚举常量
+//    return 0;
+//}
+
+
+//#define MAX 10//MAX即为第三种常量：define定义的标识符常量
+//int main()
+//{
+//	int arr[MAX];
+//	printf("%d\n", MAX);
+
+
+	/*int n = 10;
+	int arr[10] = { 0 };*/
+	
+	
+	//const--常属性
+//	//此时num即为const修饰的常变量，再这样运行就会发生错误
+//	const int num = 4;//num即为一个变量
+//	printf("%d\n", num);
+//	num = 8;
+//	printf("%d\n", num);
+//
+
+    //int num = 4;//num即为一个变量
+	//printf("%d\n", num);
+	//num = 8;
+	//printf("%d\n", num);
+    //3;//3为一个字面常量
+  /*  return 0;
+}*/
