@@ -1,0 +1,58 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+int Add(int x, int y)//Add叫函数名
+{
+	int z = x + y;
+	return z;
+
+}//大括号内叫函数体
+int main()
+{
+	int num1 = 10;
+	int num2 = 20;
+	int sum = 0;
+	int a = 100;
+	int b = 200;
+	//sum = num1 + num2;
+	sum = Add(a, b);
+	sum = Add(num1,num2);
+	//sum = a + b;
+	
+	printf("sum=%d\n", sum);
+
+	return 0;
+}
+//int main()
+//{
+//	int line = 0;
+//	printf("加入比特\n");
+//	while (line < 60000)
+//	{
+//		printf("王阔是个傻逼:%d",line);
+//		line++;
+//	}
+//	if (line >= 60000);
+//    printf("小兔说得对\n");
+//
+//
+//
+//	return 0;
+//}
+
+
+
+
+//int main()
+//{
+//	int input = 0;
+//	printf("加入比特\n");
+//	printf("你要好好学习吗？(选择1/0)>:");
+//	scanf("%d", &input);//1&0
+//	if (input == 1)
+//		printf("好offer\n");
+//	else
+//		printf("回家卖红薯");
+//     /*int a = 10;
+//	*/   //C语言注释风格（不推荐）
+//	return 0;
+//}
